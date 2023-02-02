@@ -1,0 +1,13 @@
+name: df
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  df:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run df
+        run: df -h
